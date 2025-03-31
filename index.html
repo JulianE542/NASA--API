@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploración Espacial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Exploración Espacial</h1>
+        <nav>
+            <ul>
+                <li><a href="#apod">Imagen del Día</a></li>
+                <li><a href="#mars">Mars Rover</a></li>
+                <li><a href="#satellite">Satélites</a></li>
+                <li><a href="#neo">Objetos Cercanos</a></li>
+                <li><a href="#exoplanets">Exoplanetas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Sección Imagen Astronómica del Día -->
+        <section id="apod">
+            <h2>Imagen Astronómica del Día</h2>
+            <div id="apod-container">
+                <input type="date" id="date-apod">
+                <button id="search-apod">Buscar</button>
+                <button id="remove-apod">Eliminar</button>
+                <img id="apod-image" src="" alt="Astronomical Image">
+                <p id="apod-title"></p>
+                <p id="apod-description"></p>
+            </div>
+        </section>
+
+        <!-- Sección Mars Rover -->
+        <section id="mars">
+            <h2>Mars Rover</h2>
+            <div id="mars-container">
+                <input type="date" id="date-mars">
+                <button id="search-mars">Buscar</button>
+                <button id="remove-mars">Eliminar</button>
+                <div id="mars-images"></div>
+            </div>
+        </section>
+
+        <!-- Sección Satélites -->
+        <section id="satellite">
+            <h2>Imágenes Satelitales</h2>
+            <div id="satellite-container">
+                <input type="text" id="lat-satellite" placeholder="Latitud (ej: 37.7749)">
+                <input type="text" id="lon-satellite" placeholder="Longitud (ej: -122.4194)">
+                <input type="date" id="date-satellite">
+                <button id="search-satellite">Buscar</button>
+                <button id="remove-satellite">Eliminar</button>
+                <div id="satellite-images"></div>
+            </div>
+        </section>
+
+        <!-- Sección Objetos Cercanos a la Tierra -->
+        <section id="neo">
+            <h2>Objetos Cercanos a la Tierra</h2>
+            <div id="neo-container">
+                <input type="date" id="start-date-neo" placeholder="Fecha de inicio">
+                <input type="date" id="end-date-neo" placeholder="Fecha de fin">
+                <button id="search-neo">Buscar</button>
+                <button id="remove-neo">Eliminar</button>
+                <div id="neo-data"></div>
+            </div>
+        </section>
+
+        <!-- Sección Exoplanetas -->
+        <section id="exoplanets">
+            <h2>Exoplanetas</h2>
+            <div id="exoplanets-container">
+                <button id="search-exoplanets">Buscar</button>
+                <button id="remove-exoplanets">Eliminar</button>
+                <div id="exoplanets-data"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Creado por Julián - Potenciado por la API de NASA</p>
+    <p>
+        <strong>Visita mi GitHub:</strong> 
+        <a href="https://github.com/JulianE542" target="_blank" id="github-link">github.com/JulianE542</a>
+    </p>
+    </footer>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #161b22;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #58a6ff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #58a6ff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff7b72;
+}
+
+main section {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #343a40;
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #58a6ff;
+}
+
+#apod-container, #mars-container, #satellite-container, #neo-container, #exoplanets-container {
+    margin: 20px auto;
+    max-width: 800px;
+    border: 2px solid #58a6ff;
+    border-radius: 10px;
+    background-color: #161b22;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(88, 166, 255, 0.2);
+}
+
+#apod-image, #mars-images img, #satellite-images img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#apod-title, #mars-message, #satellite-message, #neo-message, #exoplanets-message {
+    font-size: 1.5rem;
+    color: #ff7b72;
+    margin-top: 10px;
+}
+
+#apod-description, #neo-data, #exoplanets-data {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+footer {
+    background-color: #161b22;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #58a6ff;
+}
+
+
+/* Botones base */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Botón Buscar */
+#search-apod, #search-mars, #search-satellite, #search-neo, #search-exoplanets {
+    background: linear-gradient(45deg, #58a6ff, #1f6feb);
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(88, 166, 255, 0.3);
+}
+
+#search-apod:hover, #search-mars:hover, #search-satellite:hover, #search-neo:hover, #search-exoplanets:hover {
+    background: linear-gradient(45deg, #1f6feb, #58a6ff);
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(88, 166, 255, 0.5);
+}
+
+/* Botón Eliminar */
+#remove-apod, #remove-mars, #remove-satellite, #remove-neo, #remove-exoplanets {
+    background: linear-gradient(45deg, #ff7b72, #d64045);
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(255, 123, 114, 0.3);
+}
+
+#remove-apod:hover, #remove-mars:hover, #remove-satellite:hover, #remove-neo:hover, #remove-exoplanets:hover {
+    background: linear-gradient(45deg, #d64045, #ff7b72);
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(255, 123, 114, 0.5);
+}
+
+/* Transiciones suaves al hacer clic */
+button:active {
+    transform: scale(0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* Estilo del pie de página */
+footer {
+    background-color: #161b22;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #58a6ff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #58a6ff;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff7b72;
+    transform: scale(1.1);
+}
+
